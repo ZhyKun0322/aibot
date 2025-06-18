@@ -5,7 +5,8 @@ const config = require('./config.json');
 const bot = mineflayer.createBot({
   host: config.host,
   port: config.port,
-  username: config.username
+  username: config.username,
+  version: "1.19.2"
 });
 
 const PASSWORD = "ai_bot22";
