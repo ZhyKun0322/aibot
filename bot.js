@@ -3,7 +3,6 @@ const { pathfinder, Movements, goals } = require('mineflayer-pathfinder');
 const mcDataLoader = require('minecraft-data');
 const config = require('./config.json');
 const fs = require('fs');
-console.log('AutoEat:', autoeat);
 
 const bot = mineflayer.createBot({
   host: config.host,
