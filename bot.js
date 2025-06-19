@@ -1,6 +1,6 @@
 const mineflayer = require('mineflayer');
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder');
-const autoeat = require('mineflayer-auto-eat');
+const autoeat = require('mineflayer-auto-eat').default;
 const mcDataLoader = require('minecraft-data');
 const config = require('./config.json');
 const fs = require('fs');
