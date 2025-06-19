@@ -4,6 +4,7 @@ const autoeat = require('mineflayer-auto-eat').default;
 const mcDataLoader = require('minecraft-data');
 const config = require('./config.json');
 const fs = require('fs');
+console.log('AutoEat:', autoeat);
 
 const bot = mineflayer.createBot({
   host: config.host,
