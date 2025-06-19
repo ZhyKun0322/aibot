@@ -1,6 +1,5 @@
 const mineflayer = require('mineflayer');
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder');
-const autoeat = require('mineflayer-auto-eat').default;
 const mcDataLoader = require('minecraft-data');
 const config = require('./config.json');
 const fs = require('fs');
@@ -14,7 +13,10 @@ const bot = mineflayer.createBot({
 });
 
 bot.loadPlugin(pathfinder);
-bot.loadPlugin(autoeat);
+
+import('mineflayer-auto-eat').then(module => {
+  bot.loadPlugin(module.default);
+});
 
 let mcData;
 let defaultMove;
